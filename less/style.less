@@ -1,0 +1,139 @@
+@color: #0BA7C9;
+@color-top: #222222;
+.buttons {
+    position: absolute;
+    z-index: 2;
+    right: 35px;
+    margin: auto;
+}
+.locate--base {
+    width: 32px;
+    height: 32px;
+    border: #0CA8C9 solid 1px;
+    position: relative;
+}
+.contact--center {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.contact--li {
+    height: 38px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.fact--space {
+    position: absolute;
+    margin-top: 60px;
+    width: 290px;
+    height: 45px;
+}
+.fact--p {
+    
+    margin-top: -2px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin-bottom: -1.9px;
+}
+.fact--span {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #8f8f8f;
+    font-weight: 400;
+    font-family: "Poppins";
+    
+}
+.categopy--li {
+    color: #f1f1f1;
+    display: inline-block;
+    height: 50px;
+    width: 108px;
+    line-height: 49px;
+    margin-left: -5px;
+}
+.category--a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 500;
+}
+.banner__image {
+    width: 456px;
+    height: 240px;
+    background-color: #F0F0F0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.text-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-list {
+    & p {
+        font-size: 18px;
+        color: #000000;
+        font-weight: 600;
+    }
+    & ul {
+        padding-top: 6px;
+        & li {
+            & p {
+                font-size: 13px;
+                line-height: 36px;
+                color: #8f8f8f;
+                font-weight: 500;
+            }
+       }
+    }
+}
+.footer--li {
+    float: left;
+}
+.container--pd {
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer--pd {
+    float: left;
+    padding-top: 54px;
+}
+.footer--p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+.fact-ml (@p-ml,@p-fs,@span-ml,@span-fs) {
+    & p {
+        margin-left: @p-ml;
+        font-size: @p-fs;
+    }
+    & span {
+        margin-left: @span-ml;
+        font-size: @span-fs;
+    }
+}
+.fact-text {
+    & p {
+        opacity: 0;
+    }
+    & span {
+        opacity: 0;
+    }
+}

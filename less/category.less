@@ -1,0 +1,138 @@
+@import 'style.less';
+.category {
+    height: 50px;
+    width: 100%;
+    background-color: #0CA8C9;
+    position: relative;
+    & .container {
+        height: 100%;
+        .container--pd;
+        & .row {
+            height: 100%;
+            & .col-4 {
+                height: 100%;
+                & .category__categories{
+                    height: 100%;
+                    &--img {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        float: left;
+                        margin-right: 16px;
+                        position: relative;
+                        & ul {
+                            background: #fff;
+                            list-style-type: none;
+                            text-align: center;
+                            position: absolute;
+                            top: 50px;
+                            opacity: 0;
+                            & li {
+                                color: #f1f1f1;
+                                width: 260px;
+                                height: 48px;
+                                line-height: 48px;
+                                & a {
+                                    text-decoration: none;
+                                    color:  #000;
+                                    display: block;
+                                }
+                                & a:hover {
+                                    background: #F1F1F1;
+                                    color: #333;
+                                }
+                             }
+                        }
+                    }
+                    &--img:hover ul {
+                        z-index: 2;
+                        opacity: 1;
+                    }
+                    &--p {
+                        margin-left: 40px;
+                        color: white;
+                        font-size: 14px;
+                        line-height: 50px;
+                        font-weight: 500;
+                        font-family: 'Poppins';
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+            & .col-8 {
+                & .category__menu {
+                    font-family: 'Poppins';
+                    & ul {
+                        height: 50px;
+                        line-height: 50px;
+                        list-style-type: none;
+                        margin-left: 161px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        & li {
+                            display: inline-block;
+                            font-size: 15px;
+                            & a {
+                                text-decoration: none;
+                                color: #fff;
+                                display: block;
+                            }
+                            & a:hover {
+                                background: #F1F1F1;
+                                color: #333;
+                            }
+                        }
+                        & li:nth-child(2) {
+                            padding-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 841px) {
+    .category {
+        & .container {
+            & .row {
+                // & .col-4 {
+                // }
+                & .col-8 {
+                    & .category__menu {
+                        font-family: 'Poppins';
+                        & ul {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 414px) {
+    .category {
+        & .container {
+            & .row {
+                // & .col-4 {
+                // }
+                & .col-8 {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-left: -50px;
+                    & .category__menu {
+                        font-family: 'Poppins';
+                        & ul {
+                            margin-left: 0;
+                            & li {
+                                & a {
+                                    font-size: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

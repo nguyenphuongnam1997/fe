@@ -1,0 +1,160 @@
+@import 'style.less';
+.fact {
+    width: 100%;
+    height: 163px;
+    position: relative;
+    & .container {
+        height: 100%;
+        .container--pd;
+        & .row {
+            height: 100%;
+            & .col-12 {
+                height: 100%;
+                & ul {
+                    list-style-type: none;
+                    & li {
+                        position: relative;
+                        .fact__shipping {
+                            .fact--space;
+                            & img {
+                                float: left;
+                                margin-top: 3px;
+                            }
+                            & p {
+                                margin-left: 62px;
+                                .fact--p;
+                            }
+                            & span {
+                                letter-spacing: -0.1px;
+                                .fact--span;
+                            }
+                        }
+                        .fact__phone {
+                            margin-left: 290px;
+                            .fact--space;
+                            & img {
+                                margin-right: 1px;
+                                float: left;
+                            }
+                            & p {
+                                margin-left: 62px;
+                                .fact--p;
+                            }
+                            & span {
+                                .fact--span;
+                            }
+                        }
+                        .fact__handbag {
+                            margin-left: 580px;
+                            .fact--space;
+                            & img {
+                                float: left;
+                                margin-left: 3px;
+                                margin-top: 1px;
+                            }
+                            & p {
+                                margin-left: 66px;
+                                .fact--p;
+                            }
+                            & span {
+                                .fact--span;
+                            }
+                        }
+                        .fact__atm {
+                            margin-left: 870px;
+                            .fact--space;
+                            & img {
+                                float: left;
+                                margin-left: 14px;
+                            }
+                            & p {
+                                margin-left: 64px;
+                                .fact--p;
+                            }
+                            & span {
+                                letter-spacing: -0.2px;
+                                .fact--span;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and ( max-width: 1080px) {
+    .fact .container .row .col-12 ul li{
+        .fact__shipping {
+            .fact-ml (50px,14px,8px,12px)
+        }
+        .fact__phone {
+            margin-left: 240px;
+            .fact-ml (50px,14px,8px,12px)
+        }
+        .fact__handbag {
+            margin-left: 470px;
+            .fact-ml (50px,14px,8px,12px)
+        }
+        .fact__atm {
+            margin-left: 720px;
+            .fact-ml (50px,14px,8px,12px)
+        }
+    }
+}
+@media only screen and ( max-width: 992px) {
+    .fact .container .row .col-12 ul li{
+        .fact__shipping {
+            .fact-ml (48px,12px,6px,10px)
+        }
+        .fact__phone {
+            margin-left: 192px;
+            .fact-ml (48px,12px,6px,10px)
+        }
+        .fact__handbag {
+            margin-left: 378px;
+            .fact-ml (48px,12px,6px,10px)
+        }
+        .fact__atm {
+            margin-left: 565px;
+            .fact-ml (48px,12px,6px,10px)
+        }
+    }
+}
+@media only screen and ( max-width: 767px) {
+    .fact .container .row .col-12 ul li{
+        .fact__shipping {
+            .fact-text;
+        }
+        .fact__phone {
+            margin-left: 152px;
+            .fact-text;
+        }
+        .fact__handbag {
+            margin-left: 328px;
+            .fact-text;
+        }
+        .fact__atm {
+            margin-left: 505px;
+            .fact-text;
+        }
+    }
+}
+@media only screen and ( max-width: 415px) {
+    .fact .container .row .col-12 ul li{
+        .fact__shipping {
+            .fact-text;
+        }
+        .fact__phone {
+            margin-left: 102px;
+            .fact-text;
+        }
+        .fact__handbag {
+            margin-left: 210px;
+            .fact-text;
+        }
+        .fact__atm {
+            margin-left: 305px;
+            .fact-text;
+        }
+    }
+}

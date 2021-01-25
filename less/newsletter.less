@@ -1,0 +1,124 @@
+@import 'style.less';
+.newsletter {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    font-family: 'Poppins';
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .container {
+        height: 100%;
+        .container--pd;
+        & .row {
+            height: 100%;
+            & .col-12 {
+                height: 100%;
+                & .newsletter__text1 {
+                    width: 100%;
+                    position: absolute;
+                    text-align: center;
+                    padding-top: 101px;
+                    & P {
+                        font-size: 32px;
+                        letter-spacing: -0.3px;
+                        line-height: 26px;
+                        color: #ffffff;
+                        font-weight: 600;
+                        margin-right: 32px
+                    }
+                }
+                & .newsletter__text2 {
+                    width: 100%;
+                    position: absolute;
+                    text-align: center;
+                    padding-top: 144px;
+                    & p {
+                        font-size: 14px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: #D3D3D3;
+                        letter-spacing: 0.1px;
+                        margin-right: 29px;
+                    }
+                }
+                & .newsletter__form {
+                    width: 774px;
+                    height: 74px;
+                    position: absolute;
+                    font-family: "Poppins";
+                    .text-center;
+                    margin-top: 66px;
+                    & form {
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        & input:first-child {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 100px;
+                            font-size: 13px;
+                            line-height: 30px;
+                            color: #8f8f8f;
+                            font-weight: 400;
+                            padding-left: 31px;
+                        }
+                        & input:last-child {
+                            width: 170px;
+                            height: 58px;
+                            position: absolute;
+                            border-radius: 100px;
+                            border: none;
+                            background-color: #0CA8C9;
+                            top: 50%;
+                            left: 88%;
+                            transform: translate(-50%,-50%);
+                            font-size: 15px;
+                            line-height: 31px;
+                            color: #ffffff;
+                            font-weight: 500;
+                            text-align: center;
+                            letter-spacing: 0.5px;
+                            cursor: pointer;
+                        }
+                        & input:focus {
+                            outline: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and ( max-width : 800px) {
+    .newsletter .container .row .col-12 .newsletter__form {
+        width: 500px;
+    }
+    .newsletter .container .row .col-12 .newsletter__form form input:last-child {
+        width: 105px;
+    }
+    .newsletter .container .row .col-12 .newsletter__text1 P {
+        font-size: 25px;
+    }
+}
+@media only screen and ( max-width : 600px) {
+    .newsletter .container .row .col-12 .newsletter__form {
+        width: 360px;
+    }
+    .newsletter .container .row .col-12 .newsletter__form form input:last-child {
+        width: 105px;
+        left: 84%;
+    }
+    .newsletter .container .row .col-12 .newsletter__text1 P {
+        font-size: 18px;
+    }
+    .newsletter .container .row .col-12 .newsletter__text2 p {
+        font-size: 10px;
+    }
+}

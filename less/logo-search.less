@@ -1,0 +1,187 @@
+@import 'style.less';
+.logo-search {
+    height: 99px;
+    width: 100%;
+    position: relative;
+    & .container {
+        height: 100%;
+        .container--pd;
+        & .row {
+            height: 100%;
+            & .col-3 {
+                height: 100%;
+                & .logo-search__logo {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }               
+            }
+            & .col-7 {
+                position: relative;
+                & .logo-search__search {
+                    position: absolute;
+                    top: 29px;
+                    height: 40px;
+                    width: 542px;
+                    margin-left: 195px;
+                    border: #EBEBEB solid 1px;
+                    border-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-family: 'Poppins', sans-serif;
+                    &--option {
+                        height: 40px;
+                        width: 542px;
+                        float: left;
+                        & select {
+                            border: none;
+                            font-size: 12px;
+                            padding-left: 16px;
+                            letter-spacing: 0.2px;
+                            margin-top: 8px;
+                        }
+                        & select:focus {
+                            outline: 0;
+                        }
+                    }
+                    &--line {
+                        position: absolute;
+                        width: 1px;
+                        height: 25px;
+                        background-color: #E0E0E0;
+                        left: 153px;
+                    }
+                    & input {
+                        position: absolute;
+                        border: none;
+                        left: 173px;
+                        height: 38px;
+                        width: 280px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        font-family: 'Poppins';
+                        letter-spacing: 0.22px;
+                    }
+                    & input:focus{
+                        outline: 0;
+                    }
+                    & button {
+                        position: absolute;
+                        right: -15px;
+                        width: 57px;
+                        height: 40px;
+                        border: none;
+                        border-radius: 0 30px 30px 0;
+                        background-color: #20ACCA;
+                        cursor: pointer;
+                        & img {
+                            margin-right: 6px;
+                        }
+                    }
+                    & button:focus {
+                        outline: 0;
+                    }
+                    & button:hover {
+                        background-color: #348192;
+                    }
+                }
+            }
+            & .col-2 {
+                & .logo-search__sitting {
+                    position: absolute;
+                    right: 64px;
+                    top: 36px;
+                    & i {
+                        color: #20ACCA;
+                    }
+                }
+                & .logo-search__cart {
+                    position: absolute;
+                    right: 21px;
+                    top: 36px;
+                    & i {
+                        color: #20ACCA;
+                    }
+                    &--inform {
+                        position: absolute;
+                        top: -2px;
+                        left: 13px;
+                        width: 16px;
+                        height: 16px;
+                        background-color: black;
+                        border-radius: 30px;
+                        & p {
+                            color: white;
+                            text-align: center;
+                            font-family: 'Poppins';
+                            font-size: 10px;
+                            font-weight: bold;
+                            margin: auto;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen  and (max-width : 1199px) {
+    .logo-search .container .row .col-7 .logo-search__search {
+        margin-left: 0;
+    }
+}
+@media only screen  and (max-width : 991px) {
+    .logo-search .container .row .col-3 .logo-search__logo img{
+        width: 133px;
+        height: 30px;
+    }
+    .logo-search .container .row .col-7 .logo-search__search {
+        width: 360px;
+        margin-left: -15px;
+        & input {
+            left: 130px;
+            width: 213px;
+        }
+        
+    }
+}
+@media only screen  and (max-width : 767px) {
+    .logo-search .container .row .col-3 .logo-search__logo img{
+        width: 103px;
+        height: 27px;
+    }
+    .logo-search .container .row .col-7 .logo-search__search {
+        width: 263px;
+        margin-left: -15px;
+        & input {
+            left: 102px;
+            width: 143px;
+        }
+    }
+    .logo-search .container .row .col-7 .logo-search__search--option select {
+        padding-left: 0;
+    }
+}
+@media only screen and ( max-width : 478px) {
+    .logo-search .container .row .col-3 .logo-search__logo img{
+        width: 70px;
+        height: 15px;
+    }
+    .logo-search .container .row .col-7 .logo-search__search--option select {
+        font-size: 8px;
+        margin-top: 13px;
+    }
+    .logo-search .container .row .col-7 .logo-search__search {
+        width: 200px;
+        margin-left: -15px;
+        & input {
+            left: 75px;
+            width: 120px;
+            font-size: 8px;
+        }
+    }
+    .logo-search .container .row .col-2 .logo-search__sitting {
+        right: 49px;
+    }
+}
